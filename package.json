@@ -18,7 +18,7 @@
     "add": " yarn add --dev gh-pages",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "finish": "npm run build &&  yarn run deploy && git add . && git commit -m 'modify' && git push origin"
+    "finish": "npm run build  && git add . && git commit -m 'modify' && git push origin"
   },
   "homepage": "https://ldq-first.github.io/react-lifecycle/build/"
 }
