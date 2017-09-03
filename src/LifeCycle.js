@@ -20,7 +20,8 @@ class LifeCycle extends Component {
     
     componentDidMount() {
         alert(`componentDidMount\n\n
-        在组件挂载之后调用一次。这个时候，子组件也都挂载好了，可以在这里使用refs。`)
+        在组件挂载之后调用一次。这个时候，子组件也都挂载好了，可以在这里使用refs。
+        this.propsNum: ${this.propsNum}`)
     }
 
     componentWillReciveProps(nextProps) {
@@ -77,7 +78,7 @@ class LifeCycle extends Component {
         记住，不要在render里面修改state。`)
         return (
             <div className="LifeCycle">
-                <span>
+                <span ref={span => this.propsNum = span}>
                     {"Props:"}
                     <h2>{parseInt(this.props.num, 10)}</h2>
                 </span>

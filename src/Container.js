@@ -35,6 +35,9 @@ class Container extends Component {
     }
 
     render() {
+        alert(`render\n\n
+        父组件render
+        `)
         return (
             <div className="container">
                 <h1>React LifeCycle</h1>

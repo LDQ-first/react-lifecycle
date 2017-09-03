@@ -13,7 +13,8 @@
     line-height: 2.33333333;
     border-radius: 5px;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    overflow: hidden
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .weui_btn:after {
