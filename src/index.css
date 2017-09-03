@@ -2,4 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: linear-gradient(135deg,#68c9b6,#3677ce) no-repeat;
+  background-attachment: fixed;
 }
